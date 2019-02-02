@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <!-- =================================================================== -->
+  <!-- Bootstrap CSS -->
+  <!-- =================================================================== -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- =================================================================== -->
+  <!-- Fonts Load -->
+  <!-- =================================================================== -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:300,400,700" rel="stylesheet">
+  <!-- =================================================================== -->
+  <!-- Custom CSS -->
+  <!-- =================================================================== -->
+  <link rel="stylesheet" href="includes/css/styles.css">
+  <!-- =================================================================== -->
+  <!-- Metadata & Title -->
+  <!-- =================================================================== -->
+  <meta charset="utf-8">
+  <meta name="designer:" content="Daniel Contreras @Dantnad">
+  <meta name="company:" content="Axelera.Credit">
+  <title>Axelera | Créditos de nómina</title>
+</head>
+
+<body>
+
+  <!-- ======================================================================= -->
+  <!-- Navbar -->
+  <!-- ======================================================================= -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="includes/media/svg/axelera_logo.svg" width='100' alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#axeleraNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="axeleraNav">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="#">Inicio</a>
+        <a class="nav-item nav-link" href="#calculadora">Simulador</a>
+        <a class="nav-item nav-link" href="#servicios">Servicios</a>
+        <a class="nav-item nav-link" href="#requisitos">Requisitos</a>
+        <a class="nav-item nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+        <a class="nav-item nav-link" href="#contacto">Contacto</a>
+        <button class='cta-button btn btn-md cta-head' type="button" name="button">Solicita tu crédito</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================================================================= -->
+  <!-- Hero Section -->
+  <!-- ======================================================================= -->
+
+  <section id='hero-section' class="clearfix">
+    <div class="hero-carousel carousel slide" data-ride="carousel">
+      <div class="carousel-item active" data-interval="8000">
+        <img class="d-block w-100" src="includes/media/images/slide1.png" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Alcanza tus sueños</h2>
+          <p>Los créditos de nómina Axelera son fáciles de obtener y de pagar</p>
+          <button class='cta-button btn btn-md' type="button" name="button">Solicita tu crédito</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="8000">
+        <img class="d-block w-100" src="includes/media/images/slide2.png" alt="">
+      </div>
+      <div class="carousel-item" data-interval="8000">
+        <img class="d-block w-100" src="includes/media/images/slide3.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================= -->
+  <!-- Proceso -->
+  <!-- ======================================================================= -->
+
+  <section id='Process' class="clearfix">
+    <h2>Proceso</h2>
+    <div class="row features">
+      <div class="col-sm-12 col-md-6 col-lg-3 feature">
+        <i class="fas fa-desktop"></i>
+        <h3>Solicita tu crédito en linea</h3>
+        <p>Completa el formulario de solicitud y adjunta tus documentos , únicamente necesitamos tu identificación oficial y comprobante de domicilio.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 feature">
+        <i class="fas fa-chart-pie"></i>
+        <h3>Analizamos tu información</h3>
+        <p>Validamos de forma muy ágil tu información y te enviamos una propuesta.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 feature">
+        <i class="fas fa-file-contract"></i>
+        <h3>Firma tu contrato</h3>
+        <p>Una vez que aceptes la propuesta que preparamos para ti, agendamos una cita para recoger el contrato firmado en donde tu nos digas.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 feature">
+        <i class="fas fa-money-bill-wave-alt"></i>
+        <h3>Recibe el dinero en 24 horas</h3>
+        <p>Una vez recibida tu documentación en menos de 24 horas te depositamos tu crédito en la cuenta bancaria donde recibes tu nómina.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- Calculadora -->
+  <!-- ===================================================================== -->
+
+  <section id='Calculator'>
+    <div class="Calculadora">
+      <div class="calc-titulo">
+        <img class="logo" src="includes/media/svg/axelera_logo.svg" alt="Axelera Logo">
+        <h1>Calcula tu crédito Axelera</h1>
+        <p>Usa nuestro simulador para estimar tu crédito Axelera. ¡Haz que suceda!</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card monto-credit">
+            <i class="fas fa-coins"></i>
+            <h2>Monto de tu crédito</h2>
+            <p>3,000 - 150,000</p>
+            <input id="monto-range" type="range" min="3000" max="150000" step="1000" name="Monto del credito" value="3000">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">$</span>
+              </div>
+              <input id="monto" class="form-control" type="number" min="3000" max="150000" step="1000" name="Monto del credito" placeholder="Monto del credito" value="3000">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card plazo-credit">
+            <i class="fas fa-calendar"></i>
+            <h2>Plazo de tu crédito</h2>
+            <p>3 meses - 24 meses</p>
+            <input id="plazo-range" type="range" min="3" max="24" step="1" name="" value="3">
+            <div class="input-group mb-3">
+              <input class="form-control" id="plazo" type="number" min="3" max="24" name="Plazo del credito" placeholder="Plazo del credito" value="3">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">Meses</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card">
+            <h2>Tus pagos mensuales aproximados</h2>
+            <span id="pagos">$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- Productos -->
+  <!-- ===================================================================== -->
+
+  <section id='Products'>
+    <h2 class='dark-bg'>Nuestros productos</h2>
+    <h3 class='dark-bg'>Credito de Nómina</h3>
+    <p>Este es un parrafo de prueba</p>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- Requisitos  -->
+  <!-- ===================================================================== -->
+
+  <section id='requirements'>
+    <div class="row features">
+      <div class="col-sm-12 col-md-6 col-lg-3 feature">
+        <i class="fas fa-id-card"></i>
+        <h3>Identificación Oficial</h3>
+        <p>INE, IFE, Licencia</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 feature">
+        <i class="fas fa-file-invoice"></i>
+        <h3>Comprobante de domicilio</h3>
+        <p>Recibo de gas, luz, agua vigente</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 feature">
+        <i class="fas fa-birthday-cake"></i>
+        <h3>Tener entre 18 y 60 años</h3>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 feature">
+        <i class="fas fa-suitcase"></i>
+        <h3>Antigüedad laboral</h3>
+        <p>Minimo 6 meses</p>
+      </div>
+    </div>
+    <button class='cta-button btn btn-md' type="button" name="button">Solicita tu crédito</button>
+  </section>
+
+  <section id='cta'>
+    <h2 class="dark-bg">Tu respuesta en menos de 24 horas</h2>
+    <button class="cta-btn btn btn-lg btn-outline-light" type="button" name="button">Solicita tu crédito</button>
+    <h3 class="dark-bg">Solicita en linea y obten la respuesta en menos de 24 horas</h3>
+  </section>
+
+  <section id='about-us'>
+      <img class="logo" src="includes/media/svg/axelera_logo.svg" alt="Axelera Logo">
+      <div class="text-about">
+        <p>Axelera es una empresa mexicana enfocada en ofrecer soluciones financieras a los trabajadores de cualquier empresa de forma ágil, sencilla y personalizada.</p>
+        <p>Entendemos que pedir un crédito suele ser un proceso largo y complicado, por eso nuestro compromiso es ofrecerte una experiencia amigable y darte respuesta en menos de 24 horas</p>
+      </div>
+      <h3>Las oportunidades no esperan, axelera y haz que suceda</h3>
+  </section>
+
+  <footer>
+    <img src="" alt="">
+    <div class="row">
+      <div class="col-md-4">
+        <p>CREDITEA, SAPI DE C.V. SOFOM, E.N.R.
+
+          Para su constitución y operación no requiere autorización de la Secretaría de Hacienda y Crédito Público, y está sujeta a la supervisión de la Comisión Nacional Bancaria y de Valores, únicamente para efectos de lo dispuesto por el artículo
+          56 de la Ley General de Organizaciones y Actividades Auxiliares del Crédito.</p>
+      </div>
+      <div class="col-md-4">
+        <p>Encuéntranos en: </p>
+        <p>Prolongación Paseo de la Reforma 1015, Piso 9, Edificio B, Punta Santa Fe, Col. Desarrollo Santa Fe, CP 01376 , México DF
+
+          Tel +52 (55) 4210-5300</p>
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- Bootstrap scripts -->
+    <!-- ================================================================= -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- ================================================================= -->
+    <!-- Custom Scripts -->
+    <!-- ================================================================= -->
+    <script src='includes/js/calc.js' type="text/javascript"></script>
+  </footer>
+</body>
+
+</html>

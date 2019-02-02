@@ -1,0 +1,243 @@
+/* ========================================================================== */
+/* Important Info for devs */
+/*
+The project style.css structure is the following
+- First you'll find the reference design info according to the brand policies
+-Then you'll find the general settings targeting the HTML Tags
+-Afterwards you'll find the class settings
+-Lastly, you'll find the ID settings
+
+All of them have been ordered in alphabettical order for easier query
+*/
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* Reference colors */
+/*
+------Font fontface---------
+In order to improve load times the official font face (Gotham) has been replaced
+with a similar one from Google Fonts (Mukta Mahee) with its respective font weights,
+this is in order to use Google Fonts CDN to improve load times.
+
+------Official Hex Colors-------
+Purple greyish: #AFAAAE;
+Dark grey: #6C6C6C;
+Light purple: #A2869A;
+Purple: #745A6F;
+
+ */
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* General Settings */
+/* ========================================================================== */
+
+body{
+  width: 100%;
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 400;
+  /* Prevent horizontal scroll */
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 700;
+  color: #745A6F;
+}
+
+input[type=number]:focus{
+  box-shadow: 1px 1px 20px #A2869A;
+}
+
+input[type=range]{
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  background-color: #745A6F;
+  margin-bottom: 5%;
+  outline: none;
+  -webkit-transition: .2s;
+  opacity: 0.7;
+  border-radius: 15px;
+}
+
+input[type=range]:hover{
+  opacity: 1;
+}
+
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #A2869A;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+section{
+  margin: 4% auto;
+}
+
+footer{
+  background-color: #6C6C6C;
+  padding: 2% 5%;
+  color: white;
+}
+
+/* ========================================================================== */
+/* Class Settings */
+/* ========================================================================== */
+
+.bright-bg{
+  color: #745B6F;
+}
+
+.dark-bg{
+  color: white;
+}
+
+.Calculadora{
+  text-align: center;
+  padding: 5% 10%;
+  background-color: white;
+}
+
+.card{
+  padding: 7% 10%;
+  box-shadow: 0px 0px 0px 2px #745A6F;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card h2{
+  font-size: 1.5rem;
+}
+
+.card i{
+  color: #745B6F;
+  font-size: 2.8rem;
+  margin-bottom: 6%;
+}
+
+.carousel-item img{
+  height: 500px;
+  object-fit: cover;
+}
+
+.cta-button{
+  background-color: #745A6F;
+  color: white;
+}
+
+.cta-button:hover{
+  background-color: #A2869A;
+  color: white;
+}
+
+.cta-head{
+  margin-left: 10px;
+}
+
+.cta-btn{
+  margin: 2% 0;
+}
+
+.dark-bg{
+  color: white;
+}
+
+.features{
+  align-items: baseline;
+}
+
+.feature{
+  text-align: center;
+}
+
+.feature i{
+  color: #745A6F;
+  margin-bottom: 10px;
+  font-size: 55px;
+}
+
+.logo{
+  width: 180px;
+}
+
+.text-about{
+  margin: 5% 0;
+  padding: 0 30%;
+}
+
+.white-bg-title{
+  color: #745A6F;
+}
+
+/* ========================================================================== */
+/* ID settings */
+/* ========================================================================== */
+
+#about-us{
+  text-align: center;
+}
+
+#Calculator{
+  text-align: center;
+  padding: 0 10%;
+  margin-bottom: 0;
+}
+
+#cta{
+  text-align: center;
+  background-color: #745B6F;
+  padding: 3% 10%;
+}
+
+#cta h2, h3{
+  color: white;
+}
+
+#hero-section{
+  margin-top: 0;
+}
+
+#hero-section h2{
+  color: white;
+}
+
+#Process{
+  text-align: center;
+  padding: 0 15%;
+}
+
+#Products{
+  text-align: center;
+  background-color: #745B6F;
+  padding: 5%;
+}
+
+#Products p{
+  color: white;
+}
+
+#pagos{
+  font-size: 1.7rem;
+  color: #745B6F;
+}
+
+#requirements{
+  text-align: center;
+  margin: 5% 0;
+  padding: 0 15%;
+}
+
+#requirements h1, h2, h3{
+  color: #745B6F;
+}
